@@ -1,0 +1,282 @@
+@small: ~"only screen and (max-width: 320px)";
+@medium: ~"only screen and (min-width: 321px) and (max-width: 768px)";
+@large: ~"only screen and (min-width: 769px)";
+@appMainFontColor: #FFFFFF;
+@appMenuSelectedColor: #0000AD;
+
+@font-size-large: 24px;
+@font-size-medium: 12px;
+@golden: 1.61;
+
+* {
+		margin: 0;
+		padding: 0;		
+}
+HTML:extend(BODY){
+		background-image: url(../../app/img/IMG_0474c.jpg);
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center center;
+		background-attachment: fixed;
+}
+BODY {
+		font-family: Khula-Regular, Verdana, Geneva, Arial, Helvetica, sans-serif;	
+		color: @appMainFontColor;
+		letter-spacing: 1.2px;
+    margin: 0;
+    padding: 0;
+		position: relative;
+		width: 100%;
+		max-width: 100%;		
+}	
+/* Logo */
+HEADER#app-example-logo-wrapper {
+		position: absolute;
+		display: block;
+		width: 100%;
+		top: 30px;	
+		
+		IMG.app-logo {
+				display: block;
+				position: relative;
+				margin: 0 auto;
+				left: 0;
+				right: 0;				
+				@media @small {
+						width: 150px;
+				}				
+				@media @medium {
+						width: 200px;
+				}				
+				@media @large {
+						width: 250px;
+				}				
+		}
+		
+		IMG.app-slogan {
+				display: block;
+				position: relative;
+				margin: 0px auto;
+				left: 0;
+				right: 0;				
+				@media @small {
+						width: 241px;
+				}				
+				@media @medium {
+						width: 322px;
+				}				
+				@media @large {
+						width: 403px;
+				}				
+		}		
+}
+
+MAIN.app-example-content {
+		position: relative;
+		display: block;
+		width: 80%;
+		max-width: 600px;
+		margin: 0px auto 10px auto;
+		padding: 0 0 20px 0;
+		left: 0;
+		right: 0;	
+		@media @small {
+				top: 120px;
+		}				
+		@media @medium {
+				top: 140px;
+		}				
+		@media @large {
+				top: 170px;
+		}	
+		
+		DIV.app-example-multipart-articles-wrapper {
+				display: block;
+				width: 100%;
+				overflow: hidden;
+				
+				UL.app-example-multipart-articles {
+						list-style: none;
+						display: block;
+						white-space: nowrap;
+						font-size: 0;
+						position: relative;
+						
+						LI {
+								position: relative;
+								width: 100%;
+								display: inline-block;   
+								font-size: 16px;
+								vertical-align: top;
+								margin: 0;
+								padding: 0;
+								
+								H1 {
+										font-size: 14px;
+										margin: 0 0 16px 0;
+										padding: 0 0 0 4px;
+										white-space: normal;
+										word-wrap: break-word;
+								}
+								
+								P  {
+										font-size: 12px;
+										margin: 0 0 10px 0;
+										padding: 0 0 0 4px;
+										white-space: normal;
+										word-wrap: break-word;
+										line-height: 22px;
+								}
+								
+								P:last-of-type  {
+										margin: 0 0 20px 0;
+								}
+								
+								UL.app-example-multipart-article-methods {
+										list-style-type: square;
+										list-style-position: outside;
+								}
+								
+								UL.app-example-multipart-article-methods > LI {
+										list-style-type: square;
+										list-style-position: outside;
+										display: block;
+										font-size: 12px;
+										white-space: normal;
+										word-wrap: break-word;
+										line-height: 16px;
+										margin: 0 0 12px 0;
+										padding: 0 0 0 4px;
+								}										
+								
+								BUTTON.app-example-multipart-article-next {
+										position: relative;
+										margin: 20px auto;
+										left: 0;
+										right: 0;
+										background-size: 90% 90%;		
+										background-repeat: no-repeat;
+										background-position: center center;
+										background-color: rgba(0,0,0,0);
+										vertical-align: top;		
+										background-image: url(../../app/img/icons/next_outline_white_36dp.png);		
+										height: 50px;
+										width: 50px;
+										display: block;
+										border: 0;		
+										cursor: pointer;
+								}								
+								
+						}
+						
+						LI[data-part="1"] {
+								background-color: rgba(0,0,0,0.08);	
+						}
+				}	
+		}
+}
+ARTICLE.app-example-article {
+		display: block;
+		min-height: 120px;
+		position: relative;
+		margin: 0 0 10px 0;
+		background-color: rgba(255,255,255,0.04);	
+		width: 100%;
+		
+		P {
+				position: relative;
+				padding: 6px;
+		}				
+}
+DIV.app-example-edit-article {
+		position: absolute;
+		top: 0;
+		right: 0;
+		background-color: rgba(0,0,0,0.3);
+}
+.app-example-icon-new-down {
+		vertical-align: top;		
+		background-image: url(../../app/img/icons/new_p_down_white_36dp.png);		
+}
+.app-example-icon-new-down-empty {
+		vertical-align: top;		
+		background-image: url(../../app/img/icons/new_p_down_white_36dp.png);		
+}
+.app-example-icon-new-up {
+		vertical-align: top;		
+		background-image: url(../../app/img/icons/new_p_up_white_36dp.png);		
+}
+.app-example-icon-down {
+		vertical-align: top;		
+		background-image: url(../../app/img/icons/baseline_keyboard_arrow_down_white_36dp.png);		
+}
+.app-example-icon-up {
+		vertical-align: top;		
+		background-image: url(../../app/img/icons/baseline_keyboard_arrow_up_white_36dp.png);		
+}
+.app-example-icon-delete {
+		vertical-align: top;		
+		background-image: url(../../app/img/icons/baseline_cancel_white_36dp.png);		
+}
+.app-example-icon-back {
+		vertical-align: top;		
+		background-image: url(../../app/img/icons/next_outline_white_36dp.png);		
+}
+DIV.app-example-edit-article-buttons {
+		font-size: 0;
+}
+BUTTON.app-example-article-edit-button {
+		margin: 4px;
+		background-size: 90% 90%;		
+		background-repeat: no-repeat;
+    background-position: center center;
+		background-color: rgba(0,0,0,0);
+		height: 32px;
+		width: 32px;
+		display: inline-block;
+		border: 0;		
+		cursor: pointer;
+}
+BUTTON.app-example-article-edit-button:hover {
+		background-color: rgba(0,0,0,0.3);
+}
+DIV.app-example-article-edit-button-dummy {
+		margin: 4px;
+		height: 32px;
+		width: 32px;
+		display: inline-block;
+		border: 0;		
+}
+DIV.app-example-xml-display {
+		height: ~"calc(100% - 170px)"; 
+		max-height: ~"calc(100% - 170px)"; 
+		min-height: 310px;
+		width: 100%;
+		position: absolute;
+		top: 0;
+		left: 100%;
+		display: block;
+		background: #FFFFFF;	
+		overflow-y: scroll;
+		color: @appMenuSelectedColor;
+		
+		P {
+				font-size: 12px;
+				margin: 0 0 10px 0;
+		}
+		
+		DIV.app-example-xml-display-menubar {
+				display: block;
+				width: 100%;
+				position: relative;
+				background-color: rgba(0,0,0,0.3);
+		}
+		
+		PRE {
+				padding: 5px;
+				font-size: 12px;
+		}	
+}
+	
+	
+

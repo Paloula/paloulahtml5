@@ -1,0 +1,270 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+HTML {
+  background-image: url(../../app/img/IMG_0474c.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+}
+BODY,
+HTML {
+  font-family: Khula-Regular, Verdana, Geneva, Arial, Helvetica, sans-serif;
+  color: #ffffff;
+  letter-spacing: 1.2px;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  width: 100%;
+  max-width: 100%;
+}
+/* Logo */
+HEADER#app-example-logo-wrapper {
+  position: absolute;
+  display: block;
+  width: 100%;
+  top: 30px;
+}
+HEADER#app-example-logo-wrapper IMG.app-logo {
+  display: block;
+  position: relative;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+}
+@media only screen and (max-width: 320px) {
+  HEADER#app-example-logo-wrapper IMG.app-logo {
+    width: 150px;
+  }
+}
+@media only screen and (min-width: 321px) and (max-width: 768px) {
+  HEADER#app-example-logo-wrapper IMG.app-logo {
+    width: 200px;
+  }
+}
+@media only screen and (min-width: 769px) {
+  HEADER#app-example-logo-wrapper IMG.app-logo {
+    width: 250px;
+  }
+}
+HEADER#app-example-logo-wrapper IMG.app-slogan {
+  display: block;
+  position: relative;
+  margin: 0px auto;
+  left: 0;
+  right: 0;
+}
+@media only screen and (max-width: 320px) {
+  HEADER#app-example-logo-wrapper IMG.app-slogan {
+    width: 241px;
+  }
+}
+@media only screen and (min-width: 321px) and (max-width: 768px) {
+  HEADER#app-example-logo-wrapper IMG.app-slogan {
+    width: 322px;
+  }
+}
+@media only screen and (min-width: 769px) {
+  HEADER#app-example-logo-wrapper IMG.app-slogan {
+    width: 403px;
+  }
+}
+MAIN.app-example-content {
+  position: relative;
+  display: block;
+  width: 80%;
+  max-width: 600px;
+  margin: 0px auto 10px auto;
+  padding: 0 0 20px 0;
+  left: 0;
+  right: 0;
+}
+@media only screen and (max-width: 320px) {
+  MAIN.app-example-content {
+    top: 120px;
+  }
+}
+@media only screen and (min-width: 321px) and (max-width: 768px) {
+  MAIN.app-example-content {
+    top: 140px;
+  }
+}
+@media only screen and (min-width: 769px) {
+  MAIN.app-example-content {
+    top: 170px;
+  }
+}
+MAIN.app-example-content DIV.app-example-multipart-articles-wrapper {
+  display: block;
+  width: 100%;
+  overflow: hidden;
+}
+MAIN.app-example-content DIV.app-example-multipart-articles-wrapper UL.app-example-multipart-articles {
+  list-style: none;
+  display: block;
+  white-space: nowrap;
+  font-size: 0;
+  position: relative;
+}
+MAIN.app-example-content DIV.app-example-multipart-articles-wrapper UL.app-example-multipart-articles LI {
+  position: relative;
+  width: 100%;
+  display: inline-block;
+  font-size: 16px;
+  vertical-align: top;
+  margin: 0;
+  padding: 0;
+}
+MAIN.app-example-content DIV.app-example-multipart-articles-wrapper UL.app-example-multipart-articles LI H1 {
+  font-size: 14px;
+  margin: 0 0 16px 0;
+  padding: 0 0 0 4px;
+  white-space: normal;
+  word-wrap: break-word;
+}
+MAIN.app-example-content DIV.app-example-multipart-articles-wrapper UL.app-example-multipart-articles LI P {
+  font-size: 12px;
+  margin: 0 0 10px 0;
+  padding: 0 0 0 4px;
+  white-space: normal;
+  word-wrap: break-word;
+  line-height: 22px;
+}
+MAIN.app-example-content DIV.app-example-multipart-articles-wrapper UL.app-example-multipart-articles LI P:last-of-type {
+  margin: 0 0 20px 0;
+}
+MAIN.app-example-content DIV.app-example-multipart-articles-wrapper UL.app-example-multipart-articles LI UL.app-example-multipart-article-methods {
+  list-style-type: square;
+  list-style-position: outside;
+}
+MAIN.app-example-content DIV.app-example-multipart-articles-wrapper UL.app-example-multipart-articles LI UL.app-example-multipart-article-methods > LI {
+  list-style-type: square;
+  list-style-position: outside;
+  display: block;
+  font-size: 12px;
+  white-space: normal;
+  word-wrap: break-word;
+  line-height: 16px;
+  margin: 0 0 12px 0;
+  padding: 0 0 0 4px;
+}
+MAIN.app-example-content DIV.app-example-multipart-articles-wrapper UL.app-example-multipart-articles LI BUTTON.app-example-multipart-article-next {
+  position: relative;
+  margin: 20px auto;
+  left: 0;
+  right: 0;
+  background-size: 90% 90%;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-color: rgba(0, 0, 0, 0);
+  vertical-align: top;
+  background-image: url(../../app/img/icons/next_outline_white_36dp.png);
+  height: 50px;
+  width: 50px;
+  display: block;
+  border: 0;
+  cursor: pointer;
+}
+MAIN.app-example-content DIV.app-example-multipart-articles-wrapper UL.app-example-multipart-articles LI[data-part="1"] {
+  background-color: rgba(0, 0, 0, 0.08);
+}
+ARTICLE.app-example-article {
+  display: block;
+  min-height: 120px;
+  position: relative;
+  margin: 0 0 10px 0;
+  background-color: rgba(255, 255, 255, 0.04);
+  width: 100%;
+}
+ARTICLE.app-example-article P {
+  position: relative;
+  padding: 6px;
+}
+DIV.app-example-edit-article {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+.app-example-icon-new-down {
+  vertical-align: top;
+  background-image: url(../../app/img/icons/new_p_down_white_36dp.png);
+}
+.app-example-icon-new-down-empty {
+  vertical-align: top;
+  background-image: url(../../app/img/icons/new_p_down_white_36dp.png);
+}
+.app-example-icon-new-up {
+  vertical-align: top;
+  background-image: url(../../app/img/icons/new_p_up_white_36dp.png);
+}
+.app-example-icon-down {
+  vertical-align: top;
+  background-image: url(../../app/img/icons/baseline_keyboard_arrow_down_white_36dp.png);
+}
+.app-example-icon-up {
+  vertical-align: top;
+  background-image: url(../../app/img/icons/baseline_keyboard_arrow_up_white_36dp.png);
+}
+.app-example-icon-delete {
+  vertical-align: top;
+  background-image: url(../../app/img/icons/baseline_cancel_white_36dp.png);
+}
+.app-example-icon-back {
+  vertical-align: top;
+  background-image: url(../../app/img/icons/next_outline_white_36dp.png);
+}
+DIV.app-example-edit-article-buttons {
+  font-size: 0;
+}
+BUTTON.app-example-article-edit-button {
+  margin: 4px;
+  background-size: 90% 90%;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-color: rgba(0, 0, 0, 0);
+  height: 32px;
+  width: 32px;
+  display: inline-block;
+  border: 0;
+  cursor: pointer;
+}
+BUTTON.app-example-article-edit-button:hover {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+DIV.app-example-article-edit-button-dummy {
+  margin: 4px;
+  height: 32px;
+  width: 32px;
+  display: inline-block;
+  border: 0;
+}
+DIV.app-example-xml-display {
+  height: calc(100% - 170px);
+  max-height: calc(100% - 170px);
+  min-height: 310px;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 100%;
+  display: block;
+  background: #FFFFFF;
+  overflow-y: scroll;
+  color: #0000ad;
+}
+DIV.app-example-xml-display P {
+  font-size: 12px;
+  margin: 0 0 10px 0;
+}
+DIV.app-example-xml-display DIV.app-example-xml-display-menubar {
+  display: block;
+  width: 100%;
+  position: relative;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+DIV.app-example-xml-display PRE {
+  padding: 5px;
+  font-size: 12px;
+}
