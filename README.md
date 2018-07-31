@@ -38,4 +38,5 @@ deleteWithinTagNameSiblings(Element deleteElement);
 deleteWithinAllSiblings(String deleteElementId);
 deleteWithinAllSiblings(Element deleteElement);
 
+
 https://github.com/Paloula/paloulahtml5/blob/master/documentation/Tutorial%20Sequence.docx
